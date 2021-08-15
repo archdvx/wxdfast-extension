@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- An extension to integrate wxDownload Fast
+~ with Google Chrome, Chromium, Vivaldi and Opera in Linux and Windows.
+~
+~ Copyright (C) 2016  Gobinath (original uget-chrome-wrapper)
+~ Copyright (C) 2021  David Vachulka
+~
+~ This program is free software: you can redistribute it and/or modify
+~ it under the terms of the GNU General Public License as published by
+~ the Free Software Foundation, either version 3 of the License, or
+~ (at your option) any later version.
+~
+~ This program is distributed in the hope that it will be useful,
+~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+~ GNU General Public License for more details.
+~
+~ You should have received a copy of the GNU General Public License
+~ along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
+
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="popup.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-center"><img src="logo.png"/></div>
+        </div>
+        <hr>
+        <div class="row h-10">
+            <label id="info">__MSG_wxdfastFound__</label>
+            <label id="error">__MSG_wxdfastUnable__<b>wxDownload Fast</b></label>
+            <label id="warn">__MSG_wxdfastUpgrade__</label>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-5 vcenter">__MSG_text001__</div>
+            <div class="col-7 vcenter">
+                <!-- Rounded switch -->
+                <label class="switch vcenter">
+                    <input id="chk_enable" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 vcenter">__MSG_text002__</div>
+            <div class="col-7 vcenter">
+                <input class="form-control" type="number" min="-1" title=__MSG_text003__ type="text" id="fileSize" name="fileSize" />
+            </div>
+        </div>
+        <div class="row subtitle">
+            <div class="col-12 vcenter">
+                <p><span title=__MSG_text005__>__MSG_text004__</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+
+                <div class="row">
+                    <div class="col-5 vcenter">__MSG_text006__</div>
+                    <div class="col-7 vcenter">
+                        <input class="form-control" title=__MSG_text008__ type="text" id="mimeToInclude" name="mimeToInclude" placeholder="mp4, flv, gzip" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 vcenter">__MSG_text007__</div>
+                    <div class="col-7 vcenter">
+                        <input class="form-control" title=__MSG_text009__ type="text" id="mimeToExclude" name="mimeToExclude" placeholder="jpeg, png, pdf" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row subtitle">
+            <div class="col-12 vcenter">
+                <p><span title=__MSG_text010__>__MSG_text011__</span></p>
+            </div>
+        </div>
+        <div class="row pane">
+            <div class="col-12">
+
+                <div class="row">
+                    <div class="col-5 vcenter">__MSG_text006__</div>
+                    <div class="col-7 vcenter">
+                        <input class="form-control" title=__MSG_text012__ type="text" id="urlsToInclude" name="urlsToInclude" placeholder="github.com" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 vcenter">__MSG_text007__</div>
+                    <div class="col-7 vcenter">
+                        <input class="form-control" title=__MSG_text013__ type="text" id="urlsToExclude" name="urlsToExclude" placeholder="localhost, creately.com" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <row>
+            <label id="footer">__MSG_text014__<a href="https://wxdfast.dxsolutions.org/" target="_blank">wxDownload Fast</a></label>
+        </row>
+    <script src="translate.js"></script>
+</body>
+
+</html>

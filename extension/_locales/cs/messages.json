@@ -1,0 +1,87 @@
+{
+  "extensionName": {
+    "message": "Integrace wxDownload Fast",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Rozšíření nahrazuje správce stahování programem wxDownload Fast.",
+    "description": "Description of the extension."
+  },
+
+  "downloadWith": {
+    "message": "Stáhnout pomocí wxDownload Fast"
+  },
+
+  "downloadAll": {
+    "message": "Stáhnout všechny odkazy pomocí wxDownload Fast"
+  },
+
+  "wxdfastFound": {
+    "message": "Nalezen wxDownload Fast"
+  },
+
+  "wxdfastUnable": {
+    "message": "Nemohu se spojit s "
+  },
+
+  "wxdfastUpgrade": {
+    "message": "Prosím upgradujte wxDownload Fast na aktuální verzi"
+  },
+
+  "text001": {
+    "message": "Nahradit stahování"
+  },
+
+  "text002": {
+    "message": "Minimální velikost souboru"
+  },
+
+  "text003": {
+    "message": "Minimální velikost souboru (v KB) požadovaná pro nahrazení stahování"
+  },
+
+  "text004": {
+    "message": "Nahradí nebo přeskočí soubory podle jejich velikosti"
+  },
+
+  "text005": {
+    "message": "Jestliže server neposkytuje Content-Type, wxDownload Fast nahradí stahování souboru založené na jeho velikosti."
+  },
+
+  "text006": {
+    "message": "Vždy nahradit"
+  },
+
+  "text007": {
+    "message": "Nikdy nenahradit"
+  },
+
+  "text008": {
+    "message": "Nahradí soubory tohoto typu"
+  },
+
+  "text009": {
+    "message": "Přeskočí soubory tohoto typu"
+  },
+
+  "text010": {
+    "message": "Zkontroluje URLs zda obahuje klíčová slova. Proto můžete použít .fileExtension pro nahrazení/přeskočení URLs obsahující typ souboru. Tj: (.pdf, .jpg)"
+  },
+
+  "text011": {
+    "message": "Nahradí nebo přeskočí URLs podle velikosti souboru"
+  },
+
+  "text012": {
+    "message": "Nahradí URLs obsahující tyto klíčová slova"
+  },
+
+  "text013": {
+    "message": "Přeskočí URLs obsahující tyto klíčová slova"
+  },
+
+  "text014": {
+    "message": "Pro další informace, navštivte "
+  }
+}

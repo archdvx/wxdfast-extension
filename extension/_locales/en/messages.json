@@ -1,0 +1,87 @@
+{
+  "extensionName": {
+    "message": "wxDownload Fast Integration",
+    "description": "Name of the extension."
+  },
+
+  "extensionDescription": {
+    "message": "Extension replaces default download manager by wxDownload Fast.",
+    "description": "Description of the extension."
+  },
+
+  "downloadWith": {
+    "message": "Download with wxDownload Fast"
+  },
+
+  "downloadAll": {
+    "message": "Download all links with wxDownload Fast"
+  },
+
+  "wxdfastFound": {
+    "message": "Found wxDownload Fast"
+  },
+
+  "wxdfastUnable": {
+    "message": "Unable to connect with "
+  },
+
+  "wxdfastUpgrade": {
+    "message": "Please upgrade wxDownload Fast to the latest version"
+  },
+
+  "text001": {
+    "message": "Interrupt downloads"
+  },
+
+  "text002": {
+    "message": "Minimum file size"
+  },
+
+  "text003": {
+    "message": "Minimum file size (in KB) required to interrupt the download"
+  },
+
+  "text004": {
+    "message": "Interrupt or skip files regardless of their size"
+  },
+
+  "text005": {
+    "message": "If server does not provide Content-Type, wxDownload Fast will interrupt the file based on minimum file size to interrupt."
+  },
+
+  "text006": {
+    "message": "Allways interrupt"
+  },
+
+  "text007": {
+    "message": "Never interrupt"
+  },
+
+  "text008": {
+    "message": "Interrupt files with these MIME types"
+  },
+
+  "text009": {
+    "message": "Skip files with these MIME types"
+  },
+
+  "text010": {
+    "message": "This feature checks for URLs containing the keywords. Therefore you can use .fileExtension to interrupt/skip URLs containing file type. Eg: (.pdf, .jpg)"
+  },
+
+  "text011": {
+    "message": "Interrupt or skip URLs regardless of file size"
+  },
+
+  "text012": {
+    "message": "Interrupt URLs having these keywords"
+  },
+
+  "text013": {
+    "message": "Skip URLs having these keywords"
+  },
+
+  "text014": {
+    "message": "For more details, visit "
+  }
+}
