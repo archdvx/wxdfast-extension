@@ -19,10 +19,6 @@ With this tool, wxDownload Fast can interrupt and catch your downloads browsers 
 
 On Linux, BSD or Mac OS X start wxDownload Fast before adding extension for write integrator path properly.
 
-## Known Issues
-
-- [Firefox not interrupting downloads](https://github.com/ugetdm/uget-integrator/wiki/Known-Issues#firefox-not-interrupting-downloads)
-
 ## Issues
 
 Please report your issues at [wxDownload Fast repository](https://github.com/archdvx/wxdfast/issues)

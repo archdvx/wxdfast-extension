@@ -19,7 +19,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-var EXTENSION_VERSION = "1.0.0";
+var EXTENSION_VERSION = "1.1.0";
 var REQUIRED_INTEGRATOR_VERSION = "1.0.0";
 var MAX_FILE_SIZE = Number.MAX_SAFE_INTEGER;
 var interruptDownloads = true;
@@ -255,19 +255,6 @@ function setDownloadHooks() {
         }
         // Do not interrupt blacklisted items
         if (isBlackListedURL(url) || isBlackListedContent(mime)) {
-            return;
-        }
-        // Always interrupt whitelisted items
-        if (isWhiteListedURL(url) || isWhiteListedContent(mime)) {
-            fileSize = MAX_FILE_SIZE;
-        }
-
-        if (fileSize === -1 && hostName === 'com.wxdfast.firefox') {
-            // firefox always returns -1
-            fileSize = getFileSize(url);
-        }
-
-        if (fileSize < minFileSizeToInterrupt) {
             return;
         }
 
@@ -584,28 +571,6 @@ function postParams(source) {
 }
 
 /**
- * Get the fileSize of given URL.
- * @param {string} url
- */
-function getFileSize(url) {
-    var fileSize = -1;
-    try {
-        var http = new XMLHttpRequest();
-        http.open('HEAD', url, false);
-        http.send(null);
-        if (http.status === 200) {
-            fileSize = http.getResponseHeader('content-length');
-            if (fileSize) {
-                fileSize = parseInt(fileSize);
-            }
-        }
-    } catch (err) {
-        fileSize = -1;
-    }
-    return fileSize;
-}
-
-/**
  * Extract the root of a URL.
  */
 function extractRootURL(url) {
@@ -687,15 +652,6 @@ function updateIncludeMIMEs(include) {
         mimeToInterrupt = include.split(/[\s,]+/);
     }
     current_browser.storage.sync.set({ "wxdfast-mime-include": include });
-}
-
-/**
- * Update the minimum file size to interrupt.
- * Is called from the popup.js.
- */
-function updateMinFileSize(size) {
-    minFileSizeToInterrupt = size;
-    current_browser.storage.sync.set({ "wxdfast-min-file-size": size });
 }
 
 /**

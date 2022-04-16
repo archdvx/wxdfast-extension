@@ -42,7 +42,7 @@
   },
 
   "text004": {
-    "message": "Interrupt or skip files regardless of their size"
+    "message": "Interrupt or skip files"
   },
 
   "text005": {
@@ -70,7 +70,7 @@
   },
 
   "text011": {
-    "message": "Interrupt or skip URLs regardless of file size"
+    "message": "Interrupt or skip URLs"
   },
 
   "text012": {

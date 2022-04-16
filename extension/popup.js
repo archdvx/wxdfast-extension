@@ -59,7 +59,6 @@ $(document).ready(function() {
         $('#urlsToInclude').val(items["wxdfast-urls-include"]);
         $('#mimeToExclude').val(items["wxdfast-mime-exclude"]);
         $('#mimeToInclude').val(items["wxdfast-mime-include"]);
-        $('#fileSize').val(parseInt(items["wxdfast-min-file-size"]) / 1024);
         $('#chk_enable').prop('checked', items["wxdfast-interrupt"] == "true");
     });
 
@@ -68,18 +67,6 @@ $(document).ready(function() {
         var enabled = this.checked;
         current_browser.runtime.getBackgroundPage(function(backgroundPage) {
             backgroundPage.setInterruptDownload(enabled, true);
-        });
-    });
-    $("#fileSize").on("change paste", function() {
-        var minFileSize = parseInt($(this).val());
-        if (isNaN(minFileSize)) {
-            minFileSize = 300;
-        } else if (minFileSize < -1) {
-            minFileSize = -1;
-        }
-        $('#fileSize').val(minFileSize);
-        current_browser.runtime.getBackgroundPage(function(backgroundPage) {
-            backgroundPage.updateMinFileSize(minFileSize * 1024);
         });
     });
     $("#urlsToExclude").on("change paste", function() {
